@@ -1,8 +1,8 @@
-const app=require('./app.js');
+import app from './app'
+import mongoose from 'mongoose'
 
-app.set('port',process.env.PORT || 3000);
+app.set('port',process.env.PORT || 4000);
 
-const mongoose=require('mongoose');
 const mongo_url='mongodb://localhost:27017/MERN';
 
 mongoose.Promise=global.Promise;
